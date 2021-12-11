@@ -6,7 +6,7 @@ export default function ArticleList({ article }) {
 		<Link href="/article/[id]" as={`/article/${article.id}`}>
 			<a className={articleStyles.card}>
 				<h3>{article.title.toUpperCase()} &rarr;</h3>
-				<p>{article.body}</p>
+				{/* <p>{article.body}</p> */}
 			</a>
 		</Link>
 	)

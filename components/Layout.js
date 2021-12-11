@@ -1,12 +1,16 @@
 import Head from 'next/head'
 import styles from '../styles/Layout.module.css'
+import Nav from './Nav'
 
 export default function Contact({ children }) {
 	return (
-		<div className={styles.container}>
-			<main className={styles.main}>
-				{children}
-			</main>
-		</div>
+		<>
+			<Nav />
+			<div className={styles.container}>
+				<main className={styles.main}>
+					{children}
+				</main>
+			</div>
+		</>
 	)
 }

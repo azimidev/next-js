@@ -5,10 +5,6 @@ import { server } from '../config'
 export default function Home({ articles }) {
   return (
     <div>
-      <Head>
-        <title>Parsclick - Home</title>
-        <meta name="keywords" content="parsclick, iranina, persian, video tutorial" />
-      </Head>
       <h1>Welcome to next guys!</h1>
       <ArticleList articles={articles} />
     </div>

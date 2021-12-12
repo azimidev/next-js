@@ -1,12 +1,10 @@
 import Head from 'next/head'
+import Meta from '../components/Meta'
 
 export default function About() {
 	return (
 		<div>
-			<Head>
-				<title>Parsclick - About</title>
-				<meta name="keywords" content="about, parsclick, iranina, persian, video tutorial" />
-			</Head>
+			<Meta title="About" />
 			<h1>About page!</h1>
 		</div>
 	)

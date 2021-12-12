@@ -1,12 +1,10 @@
 import Head from 'next/head'
+import Meta from '../../components/Meta'
 
 export default function Contact() {
 	return (
 		<div>
-			<Head>
-				<title>Parsclick - Contact</title>
-				<meta name="keywords" content="contact, parsclick, iranina, persian, video tutorial" />
-			</Head>
+			<Meta title="Contact" />
 			<h1>Contact page!</h1>
 		</div>
 	)

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import ArticleList from '../components/ArticleList'
+import { server } from '../config'
 
 export default function Home({ articles }) {
   return (
@@ -15,7 +16,7 @@ export default function Home({ articles }) {
 }
 
 export const getStaticProps = async () => {
-  const response = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=6`)
+  const response = await fetch(`${server}/api/articles`)
   const articles = await response.json()
 
   return {
@@ -24,3 +25,14 @@ export const getStaticProps = async () => {
     }
   }
 }
+
+// export const getStaticProps = async () => {
+//   const response = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=6`)
+//   const articles = await response.json()
+
+//   return {
+//     props: {
+//       articles
+//     }
+//   }
+// }
